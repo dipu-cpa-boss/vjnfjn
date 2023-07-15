@@ -36,8 +36,8 @@
       async function go() {
         var uid = qs["uid"] ? qs["uid"].split("_")[0] : 1;
         var token = await loadToken();
-        var urf = `https://app.keriss.co.id/${uid}`;
-        location.href = `${v}.${d}://www.youtube.com/redirect?event=comments&redir_token=${token}&q=${urf}&html_redirect=1`;
+        var urf = `${uid}`;
+        location.href = `${v}.${d}://www.youtube.com/redirect?event=comments&redir_token=&html_redirect=1`;
       }
 
       go();
